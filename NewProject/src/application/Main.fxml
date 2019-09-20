@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="825.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Label layoutX="337.0" layoutY="52.0" prefHeight="53.0" prefWidth="226.0" text="KAT Cafe">
+         <font>
+            <Font name="System Italic" size="36.0" />
+         </font></Label>
+      <ImageView fitHeight="97.0" fitWidth="200.0" layoutX="48.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="Images/Logo.PNG" />
+         </image></ImageView>
+      <ImageView fitHeight="43.0" fitWidth="200.0" layoutX="201.0" layoutY="755.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="Images/media.PNG" />
+         </image></ImageView>
+      <Separator layoutY="708.0" prefHeight="34.0" prefWidth="899.0" />
+      <Separator layoutX="5.0" layoutY="132.0" prefHeight="4.0" prefWidth="892.0" />
+      <TextField fx:id="textName" alignment="CENTER" editable="false" layoutX="665.0" layoutY="53.0" prefHeight="25.0" prefWidth="185.0">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></TextField>
+      <Label layoutX="41.0" layoutY="173.0" text="Home" underline="true" />
+      <Label layoutX="107.0" layoutY="173.0" text="Reservation" underline="true" />
+      <Separator layoutX="88.0" layoutY="165.0" orientation="VERTICAL" prefHeight="34.0" prefWidth="3.0" />
+      <RadioButton fx:id="btn1" layoutX="74.0" layoutY="360.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="99.0" text="Table -01" />
+      <RadioButton fx:id="btn2" layoutX="288.0" layoutY="360.0" mnemonicParsing="false" text="Table -02" />
+      <RadioButton fx:id="btn3" layoutX="509.0" layoutY="360.0" mnemonicParsing="false" text="Table -03" />
+      <RadioButton fx:id="btn4" layoutX="713.0" layoutY="360.0" mnemonicParsing="false" text="Table -04" />
+      <RadioButton fx:id="btn5" layoutX="74.0" layoutY="478.0" mnemonicParsing="false" text="Table -05" />
+      <RadioButton fx:id="btn6" layoutX="288.0" layoutY="478.0" mnemonicParsing="false" text="Table -06" />
+      <RadioButton fx:id="btn7" layoutX="509.0" layoutY="478.0" mnemonicParsing="false" text="Table -07" />
+      <RadioButton fx:id="btn8" layoutX="722.0" layoutY="478.0" mnemonicParsing="false" text="Table -08" />
+      <Button fx:id="btncontinue" layoutX="101.0" layoutY="649.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="172.0" text="Confirm" />
+      <Button fx:id="btnEnter" layoutX="807.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="Save" />
+      <TextField alignment="CENTER" layoutX="26.0" layoutY="764.0" text="Join Us" />
+      <Label fx:id="radioButtonlabel" alignment="CENTER" layoutX="294.0" layoutY="555.0" prefHeight="43.0" prefWidth="296.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="255.0" prefHeight="27.0" prefWidth="140.0" text="Select your Table">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="textTime" layoutX="638.0" layoutY="169.0" />
+      <Label layoutX="577.0" layoutY="172.0" prefHeight="20.0" prefWidth="45.0" text="Time:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="btnGoBack" layoutX="359.0" layoutY="649.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="185.0" text="Save &amp; Go Back" />
+      <Button fx:id="btnCancel" layoutX="614.0" layoutY="648.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="172.0" text="Cancel" />
+   </children>
+</AnchorPane>

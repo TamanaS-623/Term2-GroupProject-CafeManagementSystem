@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="825.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OrderController">
+   <children>
+      <TextField fx:id="username" alignment="CENTER" centerShape="false" editable="false" focusTraversable="false" layoutX="655.0" layoutY="46.0" style="-fx-alignment: center;">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></TextField>
+      <Label layoutX="360.0" layoutY="34.0" text="KAT Cafe">
+         <font>
+            <Font name="System Italic" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutY="115.0" prefHeight="18.0" prefWidth="876.0" />
+      <Separator layoutX="6.0" layoutY="735.0" prefHeight="9.0" prefWidth="889.0" />
+      <ListView fixedCellSize="0.0" layoutX="61.0" layoutY="369.0" prefHeight="228.0" prefWidth="234.0" />
+      <Label layoutX="120.0" layoutY="228.0" text="Light Meals" />
+      <ListView layoutX="340.0" layoutY="368.0" prefHeight="228.0" prefWidth="222.0" />
+      <Label layoutX="668.0" layoutY="226.0" text="Desserts" />
+      <ListView layoutX="609.0" layoutY="367.0" prefHeight="228.0" prefWidth="234.0" />
+      <Label layoutX="35.0" layoutY="153.0" text="Home" underline="true" />
+      <Separator layoutX="73.0" layoutY="149.0" orientation="VERTICAL" prefHeight="25.0" prefWidth="5.0" />
+      <Label layoutX="79.0" layoutY="153.0" text="Order" underline="true" />
+      <ImageView fx:id="imageViewM" fitHeight="97.0" fitWidth="178.0" layoutX="88.0" layoutY="257.0" pickOnBounds="true" AnchorPane.bottomAnchor="471.0" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="633.0" AnchorPane.topAnchor="257.0">
+         <image>
+            <Image url="Images/M3.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="imageViewB" fitHeight="62.0" fitWidth="200.0" layoutX="408.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="Images/B1.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="imageViewD" fitHeight="97.0" fitWidth="179.0" layoutX="650.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="Images/D4.jpg" />
+         </image></ImageView>
+      <Label layoutX="401.0" layoutY="227.0" text="Beverages" />
+      <Button fx:id="btnGoBack" layoutX="371.0" layoutY="648.0" mnemonicParsing="false" onAction="#onGoBackClicked" prefHeight="25.0" prefWidth="169.0" text="Save and Go Back" />
+      <Button fx:id="btnConfirm" layoutX="88.0" layoutY="648.0" mnemonicParsing="false" onAction="#onConfirmClicked" prefHeight="25.0" prefWidth="169.0" text="Confirm" />
+      <Button fx:id="btnCancel" layoutX="648.0" layoutY="648.0" mnemonicParsing="false" onAction="#onCancelClicked" prefHeight="25.0" prefWidth="169.0" text="Cancel" />
+      <TextField alignment="CENTER" layoutX="29.0" layoutY="764.0" text="Join Us" />
+      <CheckBox fx:id="cbM1" layoutX="71.0" layoutY="383.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="212.0" text="Chicken Mayo------------------$20" textFill="#bb19c9" />
+      <CheckBox fx:id="cbM2" layoutX="71.0" layoutY="412.0" mnemonicParsing="false" text="Chicken Strips------------------$22" textFill="#bb19c9" />
+      <CheckBox fx:id="cbM3" layoutX="71.0" layoutY="443.0" mnemonicParsing="false" text="Chicken Biryani-----------------$30" textFill="#bb19c9" />
+      <CheckBox fx:id="cbM4" layoutX="71.0" layoutY="469.0" mnemonicParsing="false" text="Egg Masala---------------------$10" textFill="#bb19c9" />
+      <CheckBox fx:id="cbM5" layoutX="71.0" layoutY="500.0" mnemonicParsing="false" text="Veg Burger---------------------$7" textFill="#bb19c9" />
+      <CheckBox fx:id="cbM6" layoutX="71.0" layoutY="531.0" mnemonicParsing="false" text="Green Salad--------------------$20" textFill="#bb19c9" />
+      <CheckBox fx:id="cbM7" layoutX="71.0" layoutY="561.0" mnemonicParsing="false" text="Sushi Bowl---------------------$25" textFill="#bb19c9" />
+      <CheckBox fx:id="cbB1" layoutX="357.0" layoutY="382.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="195.0" text="Fruit Smoothie--------------$5" textFill="#bb19c9" />
+      <CheckBox fx:id="cbB2" layoutX="357.0" layoutY="411.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="195.0" text="Iced tes----------------------$4" textFill="#bb19c9" />
+      <CheckBox fx:id="cbB3" layoutX="357.0" layoutY="442.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="185.0" text="Italian Soda-----------------$8" textFill="#bb19c9" />
+      <CheckBox fx:id="cbB4" layoutX="357.0" layoutY="468.0" mnemonicParsing="false" text="Kit-Kat Shake---------------$8" textFill="#bb19c9" />
+      <CheckBox fx:id="cbB5" layoutX="357.0" layoutY="499.0" mnemonicParsing="false" text="Coca-Cola------------------$7" textFill="#bb19c9" />
+      <CheckBox fx:id="cbB6" layoutX="357.0" layoutY="530.0" mnemonicParsing="false" text="Lemon Shake---------------$9" textFill="#bb19c9" />
+      <CheckBox fx:id="cbB7" layoutX="358.0" layoutY="560.0" mnemonicParsing="false" text="Hot Chocolate--------------$9" textFill="#bb19c9" />
+      <CheckBox fx:id="cbD1" layoutX="621.0" layoutY="381.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="203.0" text="Croissant-----------------------$5" textFill="#bb19c9" />
+      <CheckBox fx:id="cbD2" layoutX="621.0" layoutY="410.0" mnemonicParsing="false" text="Lemon Meringue--------------$5" textFill="#bb19c9" />
+      <CheckBox fx:id="cbD3" layoutX="621.0" layoutY="441.0" mnemonicParsing="false" text="Cupcake------------------------$4" textFill="#bb19c9" />
+      <CheckBox fx:id="cbD4" layoutX="621.0" layoutY="467.0" mnemonicParsing="false" text="Apple Pie----------------------$6" textFill="#bb19c9" />
+      <CheckBox fx:id="cbD5" layoutX="621.0" layoutY="498.0" mnemonicParsing="false" text="Carrot Cake--------------------$5" textFill="#bb19c9" />
+      <CheckBox fx:id="cbD7" layoutX="623.0" layoutY="560.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="195.0" text="Vanilla cake--------------------$5" textFill="#bb19c9" />
+      <CheckBox fx:id="cbD6" layoutX="621.0" layoutY="529.0" mnemonicParsing="false" text="Chocolate Ice Cream----------$9" textFill="#bb19c9" />
+      <Button fx:id="rMeals" layoutX="268.0" layoutY="298.0" mnemonicParsing="false" opacity="0.5" prefHeight="25.0" prefWidth="31.0" text="&gt;" />
+      <Button fx:id="rBeverages" layoutX="517.0" layoutY="298.0" mnemonicParsing="false" opacity="0.5" prefHeight="25.0" prefWidth="31.0" text="&gt;" />
+      <Button fx:id="rDesserts" layoutX="796.0" layoutY="299.0" mnemonicParsing="false" opacity="0.5" prefHeight="25.0" prefWidth="31.0" text="&gt;" />
+      <Button fx:id="lDesserts" layoutX="621.0" layoutY="299.0" mnemonicParsing="false" opacity="0.5" prefHeight="25.0" prefWidth="31.0" text="&lt;" />
+      <Button fx:id="lBeverages" layoutX="356.0" layoutY="299.0" mnemonicParsing="false" opacity="0.5" prefHeight="25.0" prefWidth="31.0" text="&lt;" />
+      <Button fx:id="lMeals" layoutX="56.0" layoutY="299.0" mnemonicParsing="false" opacity="0.5" prefHeight="25.0" prefWidth="31.0" text="&lt;" />
+      <ImageView fx:id="logo" fitHeight="97.0" fitWidth="200.0" layoutX="39.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+       <image>
+            <Image url="Images/Logo.PNG" />
+      </image>
+      </ImageView>
+      <ImageView fx:id="media" fitHeight="43.0" fitWidth="200.0" layoutX="201.0" layoutY="755.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="Images/media.PNG" />
+         </image></ImageView>
+
+   </children>
+</AnchorPane>
